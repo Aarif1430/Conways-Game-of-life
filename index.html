@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game of life</title>
+    <link rel="stylesheet"href="./css/style.css">
+
+<body class="game-of-life-container" data-mode="dark">
+    <header class="banner">
+        <h1>Conway's Game of Life</h1>
+        <p id="intro">Get started by clicking on the cells to create alive cells, or click on the 'create' button to randomly create a bunch of alive cells.</p>
+    </header>
+    <main class="game-of-life-container">
+        <section class="gol" id="gameoflife" data-grid="on" data-shape="square" data-td="color"></section>
+        <aside class="gol-controls" id="controls" data-hue="01" data-form="square"><button class="p-btn" type="button" title="Make random alive cells" id="create">Create</button><button class="p-btn" type="button" disabled="disabled" title="Start alive cells evolution" id="start">Evolve</button><button class="p-btn" type="button" disabled="disabled" title="Kill all alive cells" id="reset">Reset</button>
+            <div class="p-block" id="speed"><input type="range" id="speedrange" name="speed" min="100" max="500" value="300" step="1" disabled="disabled" title="Change evolution speed" /><label for="speedrange"></label></div>
+            <ul class="p-list grid-type">
+                <li class="grid-type_square" data-type="square" title="Squared cells"><input type="radio" id="square" name="grid type" value="square grid" checked="checked" /><label for="square"></label></li>
+                <li class="grid-type_circle" data-type="circle" title="Circular cells"><input type="radio" id="circle" name="grid type" value="circle grid" /><label for="circle"></label></li>
+                <li class="grid-type_triangle" data-type="triangle" title="Triangular cells"><input type="radio" id="triangle" name="grid type" value="triangle grid" /><label for="triangle"></label></li>
+            </ul><button class="p-btn" type="button" title="Toggle grid" id="grid">Grid off</button><button class="p-btn" type="button" title="Toggle mode" id="mode">Light mode</button>
+            <ul class="p-list color-type">
+                <li class="color-type_purple" data-color="01" title="Purple cells"><input type="radio" id="purple" name="color type" value="purple color" checked="checked" /><label for="purple"></label></li>
+                <li class="color-type_pink" data-color="02" title="Pink cells"><input type="radio" id="pink" name="color type" value="pink color" /><label for="pink"></label></li>
+                <li class="color-type_blue" data-color="03" title="Blue cells"><input type="radio" id="blue" name="color type" value="blue color" /><label for="blue"></label></li>
+                <li class="color-type_green" data-color="04" title="Green cells"><input type="radio" id="green" name="color type" value="green color" /><label for="green"></label></li>
+                <li class="color-type_yellow" data-color="05" title="Yellow cells"><input type="radio" id="yellow" name="color type" value="yellow color" /><label for="yellow"></label></li>
+                <li class="color-type_white" data-color="06" title="White cells"><input type="radio" id="white" name="color type" value="white color" /><label for="white"></label></li>
+                <li class="color-type_emoji" data-color="emoji" title="Type emoji or character for cells"><input type="radio" id="emoji" name="color type" value="emoji" /><label for="emoji"> <input id="text" type="text" name="emoji-text" minlength="1" maxlength="2" size="2" value="😎" /></label></li>
+            </ul>
+        </aside>
+    </main>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
