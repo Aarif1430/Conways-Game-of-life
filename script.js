@@ -137,6 +137,8 @@ class GameOfLife {
 		this.createGrid();
 		this.createTwoDArrays();
 		this.addToggleCellClick();
+		this.randomlyPopulateGrid();
+        this.addeventListeners();
 	}
 	/* EVOLUTION GAME RULES */
 	getNeighborCount(row, col) {
@@ -355,6 +357,32 @@ class GameOfLife {
 			});
 		}
 	}
+
+	randomlyPopulateGrid() {
+        if (this.Cells) {
+            for (let i = 0; i < this.Rows; i++) {
+                for (let j = 0; j < this.Cols; j++) {
+                    if (Math.random() > 0.6){
+                        const random = Math.floor(Math.random() * 2);
+                        if (random === 1) {
+                            this.Cells[i * this.Cols + j].classList.add(this.alive);
+                            this.currentGenCells[i][j] = 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    addeventListeners() {
+        // Intialize grid with random cells
+        this.createBtn.addEventListener("click", () => {
+            this.resetEntireGrid();
+            this.randomlyPopulateGrid();
+        });
+    }
+	
 	/* AESTHETICS */
 	gridBtnClick(e) {
 		const btn = e.currentTarget;
