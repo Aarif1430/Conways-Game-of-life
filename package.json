@@ -1,0 +1,23 @@
+{
+  "name": "conways-game-of-life",
+  "version": "1.0.0",
+  "description": "A version of Conway's game of life to make generative art by creating random alive cells and transform them via cellular automation.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch sass/style.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neelo4/Conways-Game-of-life.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neelo4/Conways-Game-of-life/issues"
+  },
+  "homepage": "https://github.com/neelo4/Conways-Game-of-life#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}
