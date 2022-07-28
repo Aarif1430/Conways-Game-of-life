@@ -15,4 +15,3 @@ Rules:
 #Add style.scss in sass folder, then run
   npm run sass
 
-   https://raw.githubusercontent.com/neelo4/Conways-Game-of-life/458c21e2f9316981896782642e3c47ec6b50bed7/images/Handy_description.jpeg
