@@ -221,7 +221,7 @@ class GameOfLife {
 				let neighbors = this.getNeighborCount(row, col);
 
 				if (this.currentGenCells[row][col] === 1) {
-					// Alice Cells
+					// Alive Cells
 					if (neighbors < 2) {
 						this.nextGenCells[row][col] = 0;
 					} else if (neighbors === 2 || neighbors === 3) {
@@ -382,7 +382,7 @@ class GameOfLife {
             this.randomlyPopulateGrid();
         });
     }
-	
+
 	/* AESTHETICS */
 	gridBtnClick(e) {
 		const btn = e.currentTarget;
