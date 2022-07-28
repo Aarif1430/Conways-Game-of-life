@@ -1,5 +1,5 @@
 # Game of life by Conway
-  A version of Conway's game of life to make generative art by creating random alive cells and transform them via cellular automation.
+ 
   
 Rules:
 1. Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.
@@ -8,9 +8,9 @@ Rules:
 4. Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 * Steps to add scss styke  file in your project
-# npm init
-# npm i sass --save
-# Add {"sass": "sass --watch sass/style.scss:css/style.css"} in pacakge.josn
-# create two folders scss and css
-# Add style.scss in sass folder, then run
- # npm run sass
+ npm init
+ npm i sass --save
+ Add {"sass": "sass --watch sass/style.scss:css/style.css"} in pacakge.josn
+ create two folders scss and css
+#Add style.scss in sass folder, then run
+  npm run sass
