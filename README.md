@@ -12,6 +12,6 @@ Rules:
  npm i sass --save
  Add {"sass": "sass --watch sass/style.scss:css/style.css"} in pacakge.josn
  create two folders scss and css
-#Add style.scss in sass folder, then run
-  npm run sass
+ Add style.scss in sass folder, then run
+ npm run sass
 
