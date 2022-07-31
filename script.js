@@ -1,4 +1,3 @@
-
 class GameOfLife {
 	constructor(container) {
 		this.container = container;
@@ -239,7 +238,7 @@ class GameOfLife {
 		}
 	}
 
-	updateCurrGenerationArr() {
+	reformCurrGenerationArr() {
 		for (const row in this.currentGenCells) {
 			for (const col in this.currentGenCells[row]) {
 				this.currentGenCells[row][col] = this.nextGenCells[row][col];
@@ -248,7 +247,7 @@ class GameOfLife {
 		}
 	}
 
-	updateCellsStatus() {
+	reformCellsStatus() {
 		for (const row in this.currentGenCells) {
 			for (const col in this.currentGenCells[row]) {
 				const cell = document.getElementById(`${row}_${col}`);
@@ -263,8 +262,8 @@ class GameOfLife {
 	evolveCells() {
 		if (this.Cells) {
 			this.createNextGenerationArr();
-			this.updateCurrGenerationArr();
-			this.updateCellsStatus();
+			this.reformCurrGenerationArr();
+			this.reformCellsStatus();
 		}
 
 		if (this.EVOLVING)
