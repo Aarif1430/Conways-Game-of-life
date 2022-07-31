@@ -397,7 +397,7 @@ class GameOfLife {
 		}
 	}
 
-	setModeCSSVars(el, bg, base) {
+	CSSVars(el, bg, base) {
 		this.root.style.setProperty("--c_bg", bg);
 
 		// If black/white color is/was-last selected, replace color base
@@ -418,14 +418,14 @@ class GameOfLife {
 			btn.textContent = "Dark mode";
 			bwColor.title = "Black cells";
 
-			this.setModeCSSVars(bwColor, cWhite, cBlack);
+			this.CSSVars(bwColor, cWhite, cBlack);
 		} else {
 			// Dark mode
 			this.dBody.dataset.mode = "dark";
 			btn.textContent = "Light mode";
 			bwColor.title = "White cells";
 
-			this.setModeCSSVars(bwColor, cBlack, cWhite);
+			this.CSSVars(bwColor, cBlack, cWhite);
 		}
 	}
 
