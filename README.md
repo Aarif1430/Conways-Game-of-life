@@ -17,3 +17,9 @@
 - https://javascript.plainenglish.io/the-game-of-life-using-javascript-fc1aaec8274f
 
 - https://gist.github.com/gphan/4356339
+
+- https://www.youtube.com/watch?v=FWSR_7kZuYg
+
+- http://factmyth.com/factoids/conways-game-of-life-models-evolution/
+
+- https://www.w3schools.com/howto/howto_js_toggle_dark_mode.asp
